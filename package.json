@@ -6,11 +6,13 @@
   "devDependencies": {
     "source-map-loader": "^0.2.4",
     "ts-loader": "^4.5.0",
+    "tslint": "^5.11.0",
     "typescript": "^3.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "tslint-init":"tslint --init"
   }
 }

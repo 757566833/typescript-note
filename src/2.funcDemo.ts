@@ -19,18 +19,18 @@ let helloWord2 = { text: 'jsonHelloWord' };
 jsonHelloWord(helloWord2);
 
 
-function returnHelloWord(text: string):string {
-    return text
+function returnHelloWord(text: string): string {
+    return text;
 }
 
 let helloWord3 = 'returnHelloWord';
-console.log(returnHelloWord(helloWord3))
+console.log(returnHelloWord(helloWord3));
 
-function returnJsonHelloWord(text: string):{str:string} {
-    return {str:text}
+function returnJsonHelloWord(text: string): { str: string } {
+    return { str: text };
 }
 
 let helloWord4 = 'returnJsonHelloWord';
-console.log(returnJsonHelloWord(helloWord4).str)
+console.log(returnJsonHelloWord(helloWord4).str);
 
 

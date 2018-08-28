@@ -15,3 +15,7 @@
 
 ### 自己打包的办法是
 ### npm run webpack
+
+### tslint 可以不用命令在ide里直接检测，类似于java的eclipse等ide对java的报错，vscode要安装对应的插件，其余ide未知
+### tslint的rules文档https://palantir.github.io/tslint/rules/
+### 注意：本项目作为demo 规则并不严谨，开发过程中要更改
