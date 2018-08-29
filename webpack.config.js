@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
     mode: 'development',
     entry: {
+        '0.index': './src/0.index.ts',
         '1.helloWord': './src/1.helloWord.ts',
         '2.funcDemo': './src/2.funcDemo.ts',
         '3.classDemo': './src/3.classDemo.ts',
