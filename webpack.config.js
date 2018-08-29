@@ -7,7 +7,7 @@ module.exports = {
         '1.helloWord': './src/1.helloWord.ts',
         '2.funcDemo': './src/2.funcDemo.ts',
         '3.classDemo': './src/3.classDemo.ts',
-        // '4.helloWord': './src/1.helloWord.ts',
+        '4.interfaceDemo': './src/4.interfaceDemo.ts',
     },
     output: {
         filename: "[name].js",

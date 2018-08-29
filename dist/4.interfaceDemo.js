@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/0.index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/4.interfaceDemo.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/0.index.ts":
-/*!************************!*\
-  !*** ./src/0.index.ts ***!
-  \************************/
+/***/ "./src/4.interfaceDemo.ts":
+/*!********************************!*\
+  !*** ./src/4.interfaceDemo.ts ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * 数字类型\r\n */\r\nvar decLiteral = 6;\r\nvar hexLiteral = 0xf00d;\r\nvar binaryLiteral = 10;\r\nvar octalLiteral = 484;\r\n/**\r\n * 布尔类型\r\n */\r\nvar isDone = false;\r\n/**\r\n * 字符串\r\n */\r\nvar str0 = 'str0';\r\n/**\r\n * 字符串模板\r\n */\r\nvar sentence = \"Hello, my name is \" + str0;\r\n/**\r\n * 数组\r\n */\r\nvar list = [1, 2, 3];\r\n/**\r\n * 数组泛型 但是这个被tslint禁止了，简单类型没必要\r\n */\r\n// let list2: Array<number> = [1, 2, 3];\r\n/**\r\n * 多类型数组 元组 数组越界赋值以后会用联合类型 即string+number类型\r\n */\r\nvar x = ['hello', 10];\r\n/**\r\n * 枚举\r\n */\r\nvar Color;\r\n(function (Color) {\r\n    Color[Color[\"Red\"] = 0] = \"Red\";\r\n    Color[Color[\"Green\"] = 1] = \"Green\";\r\n    Color[Color[\"Blue\"] = 2] = \"Blue\";\r\n})(Color || (Color = {}));\r\nvar c = Color.Green;\r\n// c=1\r\nconsole.log(c);\r\nvar Color2;\r\n(function (Color2) {\r\n    Color2[Color2[\"Red\"] = 1] = \"Red\";\r\n    Color2[Color2[\"Green\"] = 2] = \"Green\";\r\n    Color2[Color2[\"Blue\"] = 3] = \"Blue\";\r\n})(Color2 || (Color2 = {}));\r\nvar c2 = Color2.Green;\r\n// c2=2\r\nconsole.log(c2);\r\nvar Color3;\r\n(function (Color3) {\r\n    Color3[Color3[\"Red\"] = 1] = \"Red\";\r\n    Color3[Color3[\"Green\"] = 5] = \"Green\";\r\n    Color3[Color3[\"Blue\"] = 9] = \"Blue\";\r\n})(Color3 || (Color3 = {}));\r\nvar c3 = Color3.Green;\r\n// c3=5\r\nconsole.log(c3);\r\nvar Color4;\r\n(function (Color4) {\r\n    Color4[Color4[\"Red\"] = 1] = \"Red\";\r\n    Color4[Color4[\"Green\"] = 2] = \"Green\";\r\n    Color4[Color4[\"Blue\"] = 3] = \"Blue\";\r\n})(Color4 || (Color4 = {}));\r\nvar colorName4 = Color4[2];\r\n// colorName4 = Green\r\nconsole.log(colorName4);\r\n/**\r\n * 通用类型 不要用object\r\n */\r\nvar notSure = 4;\r\nnotSure = 'maybe a string instead';\r\nnotSure = false;\r\nvar anyList = [1, true, 'free'];\r\n/**\r\n * 没有返回值\r\n */\r\nfunction noReturn() {\r\n    console.log('nothing');\r\n}\r\n/**\r\n * 类型断言\r\n */\r\nvar someValue = 'this is a string';\r\nvar strLength = someValue.length;\r\n/**\r\n * 还有Null 和 Undefined 以及Never 需要自己查文档\r\n */\r\n\n\n//# sourceURL=webpack:///./src/0.index.ts?");
+eval("function printInterface1(labelledObj) {\r\n    console.log(labelledObj.text);\r\n}\r\nvar myObj = { size: 1, text: 'Interface1' };\r\nprintInterface1(myObj);\r\nfunction createSquare(config) {\r\n    /**\r\n     * 这里的newSquare 是引用传递 仅仅是指到了一个json\r\n     */\r\n    var newSquare = { color: 'white', area: 100 };\r\n    if (config.color) {\r\n        newSquare.color = config.color;\r\n    }\r\n    if (config.width) {\r\n        newSquare.area = config.width * config.width;\r\n    }\r\n    return newSquare;\r\n}\r\nvar mySquare = createSquare({ color: 'black' });\r\nconsole.log(mySquare);\r\n\n\n//# sourceURL=webpack:///./src/4.interfaceDemo.ts?");
 
 /***/ })
 
